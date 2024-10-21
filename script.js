@@ -1,32 +1,31 @@
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  
-  // Nascondi tutte le immagini
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  
-  // Incrementa l'indice della slide
-  slideIndex++;
-  
-  // Se si supera il numero di slide, ricomincia dalla prima
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  
-  // Mostra l'immagine corrente
-  slides[slideIndex - 1].style.display = "block";
-  
-  // Cambia l'immagine ogni 3 secondi
-  setTimeout(showSlides, 3000); 
-}
+let slideIndex = 1;
+showSlides(slideIndex);
 
 // Funzione per cambiare slide con le frecce di navigazione
 function changeSlide(n) {
-  slideIndex += n - 1; // Modifica l'indice della slide in base alla freccia cliccata
-  showSlides(); // Chiama la funzione per aggiornare la visualizzazione delle slide
+  showSlides(slideIndex += n);
+}
+
+// Mostra la slide corrente
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+
+  // Se si raggiunge l'ultima slide, ritorna alla prima
+  if (n > slides.length) { 
+    slideIndex = 1; 
+  }
+
+  // Se si va oltre la prima slide, mostra l'ultima
+  if (n < 1) { 
+    slideIndex = slides.length; 
+  }
+
+  // Nascondi tutte le slide
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Mostra la slide corrente
+  slides[slideIndex - 1].style.display = "block";
 }
