@@ -14,10 +14,23 @@ header {
   text-align: center;
 }
 
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 .slideshow-container {
   position: relative;
   max-width: 800px;
-  margin: auto;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiunta di ombra per effetto visivo */
+  border-radius: 10px; /* Angoli arrotondati */
+  overflow: hidden; /* Per gestire meglio il contenuto della slideshow */
 }
 
 .slide {
@@ -26,7 +39,7 @@ header {
 }
 
 .slide-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -54,6 +67,10 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 1); /* Cambia il colore quando si passa sopra con il mouse */
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -62,32 +79,6 @@ header {
 @keyframes fade {
   from {opacity: 0.4}
   to {opacity: 1}
-}
-
-/* Miglioramento della visualizzazione sui dispositivi mobili */
-@media screen and (max-width: 768px) {
-  .slide-image {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .prev, .next {
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  .founder-message {
-    padding: 20px 30px; /* Riduce il padding sui lati */
-  }
-
-  .founder-message h2 {
-    font-size: 24px;
-  }
-
-  .founder-message p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
 }
 
 /* Stili per il footer */
@@ -109,6 +100,7 @@ footer {
   max-width: 800px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto di profondità */
   border-radius: 10px; /* Angoli arrotondati */
+  overflow: hidden;
 }
 
 .founder-message h2 {
@@ -137,4 +129,42 @@ footer {
 .founder-message p::before {
   margin-right: 10px;
   font-size: 24px;
+}
+
+/* Miglioramento della visualizzazione sui dispositivi mobili */
+@media screen and (max-width: 768px) {
+  .slide-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .founder-message {
+    padding: 20px 30px; /* Riduce il padding sui lati */
+  }
+
+  .founder-message h2 {
+    font-size: 24px;
+  }
+
+  .founder-message p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  header {
+    padding: 10px; /* Riduce il padding dell'header su schermi piccoli */
+  }
+
+  h1 {
+    font-size: 28px; /* Riduce la dimensione del titolo su schermi piccoli */
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
