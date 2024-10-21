@@ -3,18 +3,17 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #F1EBEB; /* Sfondo bianco leggermente colorato */
   color: #333;
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #0066CC; /* Colore del banner in blu */
   color: white;
   padding: 20px;
   text-align: center;
 }
 
-/* Stili per il contenitore della slideshow */
 .slideshow-container {
   position: relative;
   max-width: 800px;
@@ -32,12 +31,10 @@ header {
   border-radius: 10px;
 }
 
-/* Frecce di navigazione */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -47,7 +44,6 @@ header {
   border-radius: 3px;
 }
 
-/* Posizionamento delle frecce */
 .prev {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -58,7 +54,6 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Esempio di effetto fade per le immagini */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -78,4 +73,42 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+/* Stili per il messaggio del fondatore */
+.founder-message {
+  background-color: #fff; /* Sfondo bianco per far risaltare il testo */
+  padding: 40px 50px; /* Aumentato il padding ai lati per dare respiro al testo */
+  margin: 40px auto; /* Stacca il messaggio dal bordo */
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto di profondità */
+  border-radius: 10px; /* Angoli arrotondati */
+}
+
+.founder-message h2 {
+  color: #FFC107; /* Colore del titolo in giallo */
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.founder-message p {
+  font-size: 18px;
+  line-height: 1.8; /* Maggiore interlinea per migliorare la leggibilità */
+  margin-bottom: 20px;
+  color: #333; /* Colore del testo */
+}
+
+.founder-message strong {
+  color: #4CAF50; /* Colore del testo importante */
+}
+
+.founder-message p em {
+  color: #FF5733; /* Colore diverso per dare enfasi a parti specifiche */
+}
+
+/* Stili per le emoji */
+.founder-message p::before {
+  margin-right: 10px;
+  font-size: 24px;
 }
