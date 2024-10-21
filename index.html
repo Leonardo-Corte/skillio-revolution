@@ -4,7 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillio Revolution</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link al file CSS -->
+  <style>
+    /* Stili di base */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F1EBEB; /* Sfondo bianco leggermente colorato */
+      color: #333;
+    }
+
+    header {
+      background-color: #0066CC; /* Colore del banner in blu */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .slide-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+      transition: 0.6s ease;
+      border-radius: 3px;
+    }
+
+    .prev {
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .next {
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: 0.4}
+      to {opacity: 1}
+    }
+
+    /* Stili per il footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Stili per il messaggio del fondatore */
+    .founder-message {
+      background-color: #fff; /* Sfondo bianco per far risaltare il testo */
+      padding: 40px 50px; /* Aumentato il padding ai lati per dare respiro al testo */
+      margin: 40px auto; /* Stacca il messaggio dal bordo */
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Leggera ombra per effetto di profondità */
+      border-radius: 10px; /* Angoli arrotondati */
+    }
+
+    .founder-message h2 {
+      color: #FFC107; /* Colore del titolo in giallo */
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .founder-message p {
+      font-size: 18px;
+      line-height: 1.8; /* Maggiore interlinea per migliorare la leggibilità */
+      margin-bottom: 20px;
+      color: #333; /* Colore del testo */
+    }
+
+    .founder-message strong {
+      color: #4CAF50; /* Colore del testo importante */
+    }
+
+    .founder-message p em {
+      color: #FF5733; /* Colore diverso per dare enfasi a parti specifiche */
+    }
+
+    /* Stili per le emoji */
+    .founder-message p::before {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,12 +132,82 @@
     <div class="slide fade">
       <img src="https://leonardo-corte.github.io/skillio-revolution/skilio1.png" alt="Pagina 1" class="slide-image">
     </div>
-    <!-- Aggiungi tutte le altre immagini qui -->
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio2.png" alt="Pagina 2" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio3.png" alt="Pagina 3" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio4.png" alt="Pagina 4" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio5.png" alt="Pagina 5" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio6.png" alt="Pagina 6" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio7.png" alt="Pagina 7" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio8.png" alt="Pagina 8" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio9.png" alt="Pagina 9" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio10.png" alt="Pagina 10" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio11.png" alt="Pagina 11" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio12.png" alt="Pagina 12" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio13.png" alt="Pagina 13" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio14.png" alt="Pagina 14" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio15.png" alt="Pagina 15" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio16.png" alt="Pagina 16" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio17.png" alt="Pagina 17" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio18.png" alt="Pagina 18" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio19.png" alt="Pagina 19" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio20.png" alt="Pagina 20" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio21.png" alt="Pagina 21" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio22.png" alt="Pagina 22" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio23.png" alt="Pagina 23" class="slide-image">
+    </div>
+    <div class="slide fade">
+      <img src="https://leonardo-corte.github.io/skillio-revolution/skilio24.png" alt="Pagina 24" class="slide-image">
+    </div>
+
+    <!-- Frecce di navigazione -->
     <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
     <a class="next" onclick="changeSlide(1)">&#10095;</a>
   </section>
 
-  <!-- Descrizione con colori specificati e staccata dai lati -->
+  <!-- Descrizione con colori specificati -->
   <section class="founder-message">
     <h2 style="color: #FFC107;">Un messaggio dal fondatore</h2>
     <p><strong style="color: #00CADC;">Leonardo Corte</strong></p>
@@ -42,6 +227,21 @@
     <p>© 2024 Skillio Revolution. Tutti i diritti riservati.</p>
   </footer>
 
-  <script src="script.js"></script> <!-- Collegamento al file JavaScript -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 3000); /* Cambia immagine ogni 3 secondi */
+    }
+  </script>
 </body>
 </html>
