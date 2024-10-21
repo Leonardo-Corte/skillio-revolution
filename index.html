@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillio Revolution</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Stili di base */
     body {
@@ -212,12 +213,16 @@
     <h2 style="color: #FFC107;">Un messaggio dal fondatore</h2>
     <p><strong style="color: #00CADC;">Leonardo Corte</strong></p>
 
+    <!-- Testo 1 in colore blu -->
     <p style="color: #0066CC;">🌍 <strong>Immagina un mondo</strong> in cui l'educazione non è solo un obbligo, ma una fonte di ispirazione e crescita personale. Un mondo in cui ogni studente è al centro del proprio percorso di apprendimento, libero di esplorare, sbagliare, crescere e vincere. Con <strong>Skilio</strong>, questo sogno diventa realtà. ✨</p>
 
+    <!-- Testo 2 in colore verde -->
     <p style="color: #28A745;">La mia missione non è solo quella di migliorare il modo in cui impariamo, ma di <strong>rivoluzionarlo</strong>. 🔄 <strong>Skilio</strong> è nato dal desiderio di trasformare la scuola in un'esperienza coinvolgente e accessibile per tutti, in cui la tecnologia non è un ostacolo, ma un alleato. 🚀 <strong>La gamification</strong>, l'apprendimento personalizzato e la cura per ogni singolo studente sono i pilastri di questa rivoluzione. 🎮📚</p>
 
+    <!-- Testo 3 in colore blu -->
     <p style="color: #0066CC;">In un'epoca in cui la conoscenza è la chiave per affrontare le sfide del futuro, <strong>Skilio</strong> ha un obiettivo ambizioso: <strong>preparare le nuove generazioni</strong> non solo a risolvere problemi, ma a vedere nel cambiamento un'opportunità. 🌱 Perché il vero potere dell'educazione non risiede solo nelle nozioni, ma nella capacità di <strong>ispirare</strong> ✨, di <strong>creare</strong> 🛠️ e di <strong>dare forma a futuri migliori</strong>. 🌟</p>
 
+    <!-- Testi 5 e 6 in colore giallo -->
     <p style="color: #FFC107;">Credo profondamente che ogni studente, indipendentemente dal proprio background, abbia il diritto di accedere a un'educazione che <strong>li valorizzi</strong> 💡 come individui unici, capaci di realizzare cose straordinarie. <strong>Skilio</strong> è qui per abbattere le barriere, 🧱 per offrire a ciascuno le risorse di cui ha bisogno per <strong>raggiungere il proprio potenziale massimo</strong>. 🚀💪</p>
 
     <p style="color: #FFC107;">Invito te, lettore, a unirti a noi in questo viaggio. Non stiamo solo cambiando il modo in cui impariamo, <strong>stiamo costruendo il futuro dell'educazione</strong>. 📖💡 E tu ne fai parte."</p>
@@ -227,21 +232,6 @@
     <p>© 2024 Skillio Revolution. Tutti i diritti riservati.</p>
   </footer>
 
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("slide");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 3000); /* Cambia immagine ogni 3 secondi */
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
