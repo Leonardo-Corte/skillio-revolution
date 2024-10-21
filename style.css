@@ -64,6 +64,32 @@ header {
   to {opacity: 1}
 }
 
+/* Miglioramento della visualizzazione sui dispositivi mobili */
+@media screen and (max-width: 768px) {
+  .slide-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .prev, .next {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .founder-message {
+    padding: 20px 30px; /* Riduce il padding sui lati */
+  }
+
+  .founder-message h2 {
+    font-size: 24px;
+  }
+
+  .founder-message p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
 /* Stili per il footer */
 footer {
   background-color: #333;
